@@ -10,7 +10,7 @@ export const adminLogin = (req, res, next) => {
   }
   return next(errorHandler(403, "Invalid credentials!"));
 };
-
+ 
 export const dashboard = async (req, res, next) => {
   try {
     const users = await User.find();
